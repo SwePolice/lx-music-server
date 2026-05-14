@@ -1,0 +1,20 @@
+name = "lx-music-server"
+main = "src/index.ts"
+compatibility_date = "2026-05-01"
+compatibility_flags = ["nodejs_compat"]
+
+[[durable_objects.bindings]]
+name = "USER_SYNC"
+class_name = "UserSyncDO"
+
+[[kv_namespaces]]
+binding = "KV"
+id = "<KV_NAMESPACE_ID_PLACEHOLDER>"
+
+[[migrations]]
+tag = "v1"
+new_classes = ["UserSyncDO"]
+
+[vars]
+LX_USERS = "LX_USERS_PLACEHOLDER"
+SERVER_NAME = "LX Music Server"
