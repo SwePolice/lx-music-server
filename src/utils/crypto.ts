@@ -1,5 +1,5 @@
 import * as aesjs from 'aes-js'
-import { md5 } from '@noble/hashes/md5'
+import { md5 } from '@noble/hashes/legacy'
 import { bytesToHex } from '@noble/hashes/utils'
 
 const b64ToBytes = (b64: string): Uint8Array =>
