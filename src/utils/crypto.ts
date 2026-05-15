@@ -1,6 +1,6 @@
 import * as aesjs from 'aes-js'
-import { md5 } from '@noble/hashes/legacy'
-import { bytesToHex } from '@noble/hashes/utils'
+import { md5 } from '@noble/hashes/legacy.js'
+import { bytesToHex } from '@noble/hashes/utils.js'
 
 const b64ToBytes = (b64: string): Uint8Array =>
   Uint8Array.from(atob(b64), c => c.charCodeAt(0))

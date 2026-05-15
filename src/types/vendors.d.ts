@@ -26,9 +26,9 @@ declare module 'aes-js' {
 }
 
 // @noble/hashes 子路径类型
-declare module '@noble/hashes/md5' {
+declare module '@noble/hashes/legacy.js' {
   export function md5(data: Uint8Array): Uint8Array
 }
-declare module '@noble/hashes/utils' {
+declare module '@noble/hashes/utils.js' {
   export function bytesToHex(bytes: Uint8Array): string
 }
